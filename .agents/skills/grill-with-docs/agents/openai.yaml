@@ -1,0 +1,5 @@
+interface:
+  display_name: "質問と文書化"
+  short_description: "要件を明確にし、用語集と ADR に残す"
+policy:
+  allow_implicit_invocation: false

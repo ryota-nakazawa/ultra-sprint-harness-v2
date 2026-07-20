@@ -1,0 +1,3 @@
+interface:
+  display_name: "テスト駆動開発"
+  short_description: "赤・緑・リファクタリングで実装を進める"

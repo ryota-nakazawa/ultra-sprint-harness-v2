@@ -1,0 +1,5 @@
+interface:
+  display_name: "チケット分解"
+  short_description: "仕様を縦方向の実装チケットに分割する"
+policy:
+  allow_implicit_invocation: false
