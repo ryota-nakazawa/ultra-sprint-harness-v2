@@ -13,14 +13,13 @@ grill-lite
 ```
 
 - `grill-lite`: 既存情報を優先してMVP要件を整理し、質問を最大5問に抑えて`to-spec`へ渡します。
-- `grill-with-docs`: 用語集やADRまで残す必要がある場合に、より丁寧に要件と判断を整理します。
 - `to-spec`: 合意済みの会話を仕様書と GitHub Issue に変換します。
 - `to-tickets`: 仕様を、単独で検証できる縦方向の実装チケットへ分けます。
 - `implement`: 仕様またはチケットに従い、テストと型検査を行って実装します。
 - `tdd`: 合意済みの公開境界で、赤・緑の小さな反復を行います。
 - `code-review`: 標準適合と仕様適合を、並列サブエージェントで別々にレビューします。
 
-このMVPには `grilling` を含めません。通常の要件整理は `grill-lite` が担当します。`grill-with-docs` は、用語集や ADR まで作る必要がある場合に引き続き利用できます。
+このMVPには `grilling` と `grill-with-docs` を含めません。通常の要件整理は `grill-lite` が担当します。
 
 ## 使い方
 
