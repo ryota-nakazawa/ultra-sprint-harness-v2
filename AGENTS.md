@@ -10,7 +10,7 @@
 
 ## 課題管理
 
-仕様書はローカルのMarkdownで管理し、実装チケットは GitHub Issues で管理する。詳細は `docs/agents/issue-tracker.md` を参照する。
+仕様書と実装チケットはローカルのMarkdownで管理する。詳細は `docs/agents/issue-tracker.md` を参照する。
 
 ## ローカル成果物
 
