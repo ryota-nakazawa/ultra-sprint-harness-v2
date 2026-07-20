@@ -6,6 +6,8 @@ disable-model-invocation: true
 
 このスキルは、現在の会話コンテキストとコードベースの理解を取得し、仕様を作成します (このドキュメントは PRD として知られているかもしれません)。ユーザーにインタビューしないでください。すでに知っていることを総合するだけです。
 
+会話内に `# Grill Result` がある場合は、その `Confirmed Decisions`、`Assumptions`、`Open Questions`、`Handoff to Spec` を仕様化の主要な入力として使います。未解決事項を確定事項として扱わず、追加インタビューは行いません。
+
 課題管理とトリアージラベルは `AGENTS.md`、`docs/agents/issue-tracker.md`、`docs/agents/triage-labels.md` に従います。これらがない場合は、GitHub Issue に公開する前に利用者へ運用方法を確認してください。
 
 ＃＃ プロセス

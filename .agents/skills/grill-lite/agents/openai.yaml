@@ -1,0 +1,6 @@
+interface:
+  display_name: "軽量要件整理"
+  short_description: "MVPの要件を短時間で整理して仕様書作成へ渡すスキル"
+  default_prompt: "$grill-lite を使って、このアイデアを仕様書作成前に整理してください。"
+policy:
+  allow_implicit_invocation: false
