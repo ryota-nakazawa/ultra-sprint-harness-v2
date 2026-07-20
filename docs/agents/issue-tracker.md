@@ -1,10 +1,10 @@
 # 課題管理
 
-仕様と実装チケットは GitHub Issues で管理する。`gh` CLI は、このリポジトリの `origin` を対象として利用する。
+実装チケットは GitHub Issues で管理する。仕様書は `.scratch/<機能名>/spec.md` に保存する。`gh` CLI は、このリポジトリの `origin` を対象として利用する。
 
 ## 操作の規約
 
-- 仕様は GitHub Issue として作成し、`ready-for-agent` ラベルを付ける。
+- 仕様は `.scratch/<機能名>/spec.md` に作成し、`/to-tickets` の入力として渡す。
 - 実装チケットは依存関係が分かる順に作成し、本文にブロッカーを記載する。
 - Issue を作成・更新する前に、対象リポジトリと既存 Issue を確認する。
 - GitHub が利用できない場合は、`.scratch/<機能名>/issues/` にローカルチケットを作成する。このパスを含む `.scratch/` はローカル成果物置き場であり、Git 管理しない。

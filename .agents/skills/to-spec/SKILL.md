@@ -1,6 +1,6 @@
 ---
 name: to-spec
-description: 現在の会話を仕様に変換し、プロジェクトの問題トラッカーに公開します。インタビューは行わず、すでに議論した内容を合成するだけです。
+description: 現在の会話をローカルのMarkdown仕様書に変換します。インタビューは行わず、すでに議論した内容を合成するだけです。
 disable-model-invocation: true
 ---
 
@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 会話内に `# Grill Result` がある場合は、その `Confirmed Decisions`、`Assumptions`、`Open Questions`、`Handoff to Spec` を仕様化の主要な入力として使います。未解決事項を確定事項として扱わず、追加インタビューは行いません。
 
-課題管理とトリアージラベルは `AGENTS.md`、`docs/agents/issue-tracker.md`、`docs/agents/triage-labels.md` に従います。これらがない場合は、GitHub Issue に公開する前に利用者へ運用方法を確認してください。
+仕様書の保存先は `AGENTS.md` のローカル成果物規約に従う。規約がない場合は `.scratch/<機能名>/spec.md` に保存する。GitHub Issue への公開やトリアージラベルの付与は行わない。
 
 ＃＃ プロセス
 
@@ -18,7 +18,7 @@ disable-model-invocation: true
 
 これらの縫い目が期待どおりであるかどうかをユーザーに確認してください。
 
-3. 以下のテンプレートを使用して仕様を作成し、プロジェクトの問題トラッカーに公開します。 `ready-for-agent` トリアージ ラベルを適用します。追加のトリアージは必要ありません。
+3. 以下のテンプレートを使用して仕様を作成し、`.scratch/<機能名>/spec.md` に保存します。`<機能名>` は仕様の内容を表す短いkebab-caseの名前にする。保存後は、作成したファイルパスを示して `/to-tickets` に渡すよう案内する。
 
 <spec-template>
 

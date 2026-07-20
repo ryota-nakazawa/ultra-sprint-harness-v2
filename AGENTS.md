@@ -3,14 +3,14 @@
 ## 開発の流れ
 
 1. `/grill-lite` で要件を短時間で整理し、仮定と未解決事項を明示する。
-2. `/to-spec` で仕様を作成し、GitHub Issue に公開する。
+2. `/to-spec` で仕様を作成し、`.scratch/<機能名>/spec.md` に保存する。
 3. `/to-tickets` で仕様を検証可能な縦方向のチケットに分解する。
 4. `/implement` でチケットを実装する。合意済みの公開境界では `/tdd` を使う。
 5. `/code-review` で、標準適合と仕様適合を並列サブエージェントで確認する。
 
 ## 課題管理
 
-仕様と実装チケットは GitHub Issues で管理する。詳細は `docs/agents/issue-tracker.md` を参照する。
+仕様書はローカルのMarkdownで管理し、実装チケットは GitHub Issues で管理する。詳細は `docs/agents/issue-tracker.md` を参照する。
 
 ## ローカル成果物
 
