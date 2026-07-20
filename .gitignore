@@ -1,0 +1,9 @@
+# ハーネスが生成するローカル成果物
+.scratch/
+
+# 依存関係とテスト実行時の生成物
+node_modules/
+coverage/
+test-results/
+playwright-report/
+.data/
