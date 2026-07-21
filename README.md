@@ -6,18 +6,41 @@
 
 ```text
 grill-lite
-  → to-spec
-  → to-tickets
-  → implement（必要に応じて tdd）
-  → code-review
+  → 作業対象を判定
+    ├→ Harness Improvement
+    │   → to-spec → to-tickets → implement（必要に応じて tdd）→ code-review
+    └→ Project Delivery
+        → 成果物タイプを選択
+            ├→ Webアプリ: to-spec 以降の既存フロー
+            └→ その他: 型別フロー（今後定義）
 ```
 
-- `grill-lite`: 既存情報を優先してMVP要件を整理し、質問を最大5問に抑えて`to-spec`へ渡します。
+- `grill-lite`: 既存情報を優先してMVP要件と作業対象を整理し、質問を最大5問に抑えて適切な後続フローへ渡します。
 - `to-spec`: 合意済みの会話をローカルのMarkdown仕様書に変換します。
 - `to-tickets`: 仕様を、単独で検証できる縦方向の実装チケットへ分けます。
 - `implement`: 仕様またはチケットに従い、テストと型検査を行って実装します。
 - `tdd`: 合意済みの公開境界で、赤・緑の小さな反復を行います。
 - `code-review`: 標準適合と仕様適合を、並列サブエージェントで別々にレビューします。
+
+## 作業対象とブランチ運用
+
+意味のある変更は、まず `grill-lite` で整理し、専用ブランチで進めます。最初に、この開発キット自体を改善する `Harness Improvement` と、利用者向け成果物を作る `Project Delivery` を区別します。
+
+`Harness Improvement` は、成果物タイプを選ばずに仕様化からレビューまでのハーネス変更フローへ進みます。利用者向けの業務フローや別ハーネスを作る `ハーネス設計` は、`Project Delivery` 側の成果物です。誤字、リンク、整形のような軽微修正は、ブランチ運用の例外にできます。
+
+`Project Delivery` では、主成果物を1つ選び、必要な補助的な出力を付随成果物として記録します。
+
+| 主成果物 | 想定する価値 |
+| --- | --- |
+| Webアプリ | ブラウザ上で利用する画面・導線を提供する |
+| Agent Skills | Codex に再利用可能な能力を追加する |
+| GPTsのシステムプロンプト | Custom GPT の役割、口調、制約を定義する |
+| ハーネス設計 | 利用者向けの業務フローや別ハーネスを設計する |
+| Python／Node.jsスクリプト | コマンドや定期実行で処理を自動化する |
+| Webスクレイピング・ブラウザ自動化 | Playwright や Chrome 拡張などでブラウザ操作・収集を自動化する |
+| ファイル成果物 | Excel、CSV、Word、PowerPoint、PDF などを生成する |
+
+たとえば「ECサイトの価格を収集して Excel で渡す」依頼では、主成果物を `Webスクレイピング・ブラウザ自動化`、付随成果物を `ファイル成果物（Excel）` とします。実装言語や Playwright は、成果物タイプではなく実装選択肢として記録します。
 
 このMVPには `grilling` と `grill-with-docs` を含めません。通常の要件整理は `grill-lite` が担当します。
 
