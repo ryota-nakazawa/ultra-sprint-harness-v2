@@ -12,11 +12,13 @@
 ├── data/                     # 試作の実行時データ
 ├── test-results/             # テストツールの生データ、失敗時の証跡
 └── quality/
+    ├── test-plan.md          # 合意済みの継ぎ目と振る舞い別テストケース
+    ├── tdd-log.md            # 振る舞いごとのRed/Green実行記録
     ├── test-summary.md       # 実行コマンドごとの結果と最終判定
     └── code-review.md        # 固定点、サブエージェント、標準・仕様レビュー結果
 ```
 
-`test-summary.md` と `code-review.md` は、実行日時、判定、対象を明記する。サブエージェントを使うレビューでは、役割・対象・完了状態も `code-review.md` に記録する。
+`test-plan.md` は継ぎ目とテストケースを分けて記録する。`tdd-log.md` は各振る舞いのRed/Greenを記録する。`test-summary.md` と `code-review.md` は、実行日時、判定、対象を明記する。サブエージェントを使うレビューでは、役割・対象・完了状態も `code-review.md` に記録する。
 
 `.scratch/` は Git 管理しない。成果物を共有・恒久化する必要が生じた場合は、内容を整理して `docs/` またはソースコードに明示的に移す。
 
