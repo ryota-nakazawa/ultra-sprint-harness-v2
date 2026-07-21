@@ -71,6 +71,8 @@ disable-model-invocation: true
 
 **ステータス:** エージェントの準備完了
 
+**完了条件:** 全てのチェック項目が個別テストで合格し、`quality/test-plan.md`、`quality/tdd-log.md`、`quality/test-summary.md` と照合済みであること。完了時のみステータスを `完了`、チェック項目を `[x]` に更新する。
+
 **テスト対象の振る舞い:** このチケットで個別にRed → Greenで検証する、利用者から見える振る舞い。最終スモークテストだけで代替しない。
 
 - [ ] 合格基準 1
