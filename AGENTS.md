@@ -31,6 +31,8 @@
 4. `/implement` でチケットを実装する。合意済みの公開境界では `/tdd` を使う。
 5. `/code-review` で、標準適合と仕様適合を並列サブエージェントで確認する。
 
+Webアプリでは、成果物ルーターの後に `/webapp-design` で `Design Brief` を確認してから `/to-spec` へ進む。`Design Brief` は、テーマ、UI規範、主操作、主要画面、主要遷移、画像確認の要否を残す。
+
 ## 課題管理
 
 仕様書と実装チケットはローカルのMarkdownで管理する。詳細は `docs/agents/issue-tracker.md` を参照する。

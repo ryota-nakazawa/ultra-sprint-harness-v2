@@ -1,0 +1,6 @@
+interface:
+  display_name: "Webアプリ設計"
+  short_description: "実装前にWebアプリのテーマ・UI規範・画面遷移をDesign Briefへ整理する"
+  default_prompt: "$webapp-design を使って、このWebアプリのDesign Briefを作成してください。"
+policy:
+  allow_implicit_invocation: false

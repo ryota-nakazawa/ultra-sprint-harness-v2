@@ -11,7 +11,7 @@ grill-lite
     │   → to-spec → to-tickets → implement（必要に応じて tdd）→ code-review
     └→ Project Delivery
         → 成果物タイプを選択
-            ├→ Webアプリ: to-spec 以降の既存フロー
+            ├→ Webアプリ: webapp-design → to-spec 以降の既存フロー
             └→ その他: 型別フロー（今後定義）
 ```
 
@@ -21,6 +21,7 @@ grill-lite
 - `implement`: 仕様またはチケットに従い、テストと型検査を行って実装します。
 - `tdd`: 合意済みの公開境界で、赤・緑の小さな反復を行います。
 - `code-review`: 標準適合と仕様適合を、並列サブエージェントで別々にレビューします。
+- `webapp-design`: Webアプリの実装前に、テーマ、UI規範、主要画面、主要遷移、UI画像確認の要否を `Design Brief` として整理します。
 
 ## 作業対象とブランチ運用
 
